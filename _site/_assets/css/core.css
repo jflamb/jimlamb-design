@@ -50,15 +50,10 @@ table {
 body {
 	color: rgba(0, 0, 0, 0.9);
     font-family: 'Merriweather', sans-serif;
-	font-size: 15px;
+	font-size: 16px;
 	padding: 32px 4vw;
 	max-width: 800px;
 	margin: 0 auto;
-	/*
-	color: #222222;
-	background-color: #ebebeb;
-	background-image: url('../images/topography.svg');
-	*/
 }
 
 h1, h2, h3, h4, h5 {
@@ -111,8 +106,3 @@ footer {
 .depth-16 {
 	box-shadow: 0 6.4px 14.4px 0 rgba(0,0,0,.132), 0 1.2px 3.6px 0 rgba(0,0,0,.108);
 }
-
-.communication-color {
-	color: #8A2AE4;
-}
-
