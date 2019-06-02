@@ -88,7 +88,7 @@ figure {
 	padding: 24px 0 40px 0;
 }
 
-figure img {
+figure img, figure picture {
 	margin-bottom: 16px;
 	width: 100%;
 	height: auto;
