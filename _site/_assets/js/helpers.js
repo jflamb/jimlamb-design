@@ -22,7 +22,3 @@ function getMailToLink()
 
     return "<a href='mailto:"+link+"'>email me</a>";
 };
-
-document.addEventListener("DOMContentLoaded", function(){
-    document.getElementById("mailToLink").outerHTML = getMailToLink();
-});
