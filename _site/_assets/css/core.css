@@ -97,6 +97,7 @@ figure img, figure picture {
 figcaption {
 	font-size: 13px;
 	color: rgba(0, 0, 0, 0.55);
+	line-height: 150%;
 }
 
 footer {
