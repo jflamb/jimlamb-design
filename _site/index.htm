@@ -7,7 +7,7 @@
         <meta name="description" content="Design portfolio of Jim Lamb, a Senior UX Designer at Microsoft">
         <link href="_assets/css/core.css" type="text/css" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css?family=Merriweather%7CMontserrat:300,400" rel="stylesheet" />
-        <script src="_assets/js/helpers.js" async></script>
+        <script src="_assets/js/helpers.js" async defer></script>
     </head>
     <body>
         <header>
@@ -77,11 +77,5 @@
         <footer>
             <p>Copyright &copy; 2019, all rights reserved</p>
         </footer>
-        <script>
-            // self executing function here
-            (function() {
-                document.getElementById("mailToLink").innerHTML = getMailToLink();
-            })();
-        </script>
     </body>
 </html>
