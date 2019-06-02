@@ -24,5 +24,5 @@ function getMailToLink()
 };
 
 document.addEventListener("DOMContentLoaded", function(){
-    document.getElementById("mailToLink").innerHTML = getMailToLink();
+    document.getElementById("mailToLink").outerHTML = getMailToLink();
 });
