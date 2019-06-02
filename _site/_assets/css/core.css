@@ -20,6 +20,7 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
@@ -44,16 +45,72 @@ table {
 	border-spacing: 0;
 }
 
-/* styles */
+/* elements */
 
 body {
+	color: rgba(0, 0, 0, 0.9);
     font-family: 'Merriweather', sans-serif;
-    font-size: 15px;
-    padding: 2em 2.5em;
-    color: #222222;
+	font-size: 15px;
+	padding: 32px 4vw;
+	max-width: 800px;
+	margin: 0 auto;
+	/*
+	color: #222222;
+	background-color: #ebebeb;
+	background-image: url('../images/topography.svg');
+	*/
 }
+
+h1, h2, h3, h4, h5 {
+	font-family: 'Montserrat', sans-serif;
+}
+
 h1 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 44px;
-    padding-bottom: .25em;
+    font-size: 48px;
+	line-height: 125%;
+	letter-spacing: -0.05em;
+    padding-bottom: 16px;
 }
+
+h2 {
+	font-size: 39px;
+	line-height: 125%;
+	padding: 40px 0 16px 0;
+}
+
+p {
+	font-size: 16px;
+	line-height: 180%;
+}
+
+figure {
+	padding: 24px 0 40px 0;
+}
+
+figure img {
+	margin-bottom: 16px;
+	width: 100%;
+	height: auto;
+}
+
+figcaption {
+	font-size: 13px;
+	color: rgba(0, 0, 0, 0.55);
+}
+
+footer {
+	margin-top: 56px;
+	padding: 8px 0;
+	border-top: solid 1px rgb(0, 0, 0, 0.2);
+}
+
+/* classes */
+
+.depth-16 {
+	box-shadow: 0 6.4px 14.4px 0 rgba(0,0,0,.132), 0 1.2px 3.6px 0 rgba(0,0,0,.108);
+}
+
+.communication-color {
+	color: #8A2AE4;
+}
+

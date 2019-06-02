@@ -1,12 +1,85 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <title>Jim Lamb</title>
-    <link href="site.css" type="text/css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat:300,400" rel="stylesheet">
-</head>
-<body>
-    <h1>Jim Lamb&rsquo;s Portfolio</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-</body>
+<html lang="en"> 
+    <head>
+        <title>Jim Lamb &middot; Design Portfolio</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="_assets/css/core.css" type="text/css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat:300,400" rel="stylesheet" />
+        <script type="text/javascript" src="_assets/js/helpers.js" async></script>
+    </head>
+    <body>
+        <header>
+            <h1>I&rsquo;m Jim Lamb</h1>
+        </header>
+        <main>
+            <p>Thanks for taking the time to visit my portfolio. 
+                I’m passionate about designing great user experiences, and I love working with talented, diverse teams to bring them to life. 
+                I’m currently a Sr. UX Designer for Microsoft working on <a href="https://azure.microsoft.com/en-us/services/devops/">Azure DevOps</a>. 
+                More specifically, I work on developer-facing experiences in the Pipelines, Repos, and Artifacts services.</p>
+
+            <h2>Recent work</h2>
+
+            <p>I’ve been working on a YAML editor for Azure Pipelines based on the Monaco editor component from Visual Studio Code. 
+                The way that the editor is virtualized constrains the options for layouts and scrolling behavior, but I was able to come up with a clean, simple solution.</p>
+            <figure>
+                <a href="_assets/images/yaml-editor.png">
+                    <img src="_assets/images/yaml-editor.png" class="depth-16" width="800" height="500" alt="Azure Pipelines pipeline (YAML) editor" />
+                </a>
+                <figcaption>Azure Pipelines pipeline (YAML) editor</figcaption>
+            </figure>
+
+            <p>Another view that posed some interesting challenges was a listing of pipeline runs. 
+                There’s a lot of information to convey in this view, particularly for large-scale cases. 
+                We ended up going in a somewhat different direction with this design, but this an exploration I designed during the process.</p>
+            <figure>
+                <a href="_assets/images/pipeline-runs.png">
+                    <img src="_assets/images/pipeline-runs.png" class="depth-16" width="800" height="500" alt="Azure Pipelines view of runs for a selected multi-stage pipeline" />
+                </a>
+                <figcaption>Azure Pipelines view of runs for a selected multi-stage pipeline</figcaption>
+            </figure>
+
+            <p>To support the keynote presentation for Microsoft Build 2019, I iterated on my earlier design for creating a new pipeline. 
+                Since deploying to a Kubernetes cluster is a fairly complex process, I came up with a simple way to capture some additional configuration information during the process.</p>
+            <figure>
+                <a href="_assets/images/deploy-to-kubernetes.png">
+                    <img src="_assets/images/deploy-to-kubernetes.png" class="depth-16" width="800" height="500" alt="New pipline to deploy a container image to a Kubernetes cluster on Azure" />
+                </a>
+                <figcaption>New pipline to deploy a container image to a Kubernetes cluster on Azure</figcaption>
+            </figure>
+
+            <p>Of course, some of the work that comes your way isn’t so glamorous. 
+                In this case, I was asked to design an experience for protecting branches matching a pattern across a (potentially large) set of Git repositories.</p>
+            <figure>
+                <a href="_assets/images/branch-protection-pipeline-policy.png">
+                    <img src="_assets/images/branch-protection-pipeline-policy.png" class="depth-16" width="800" height="500" alt="Azure Repos branch protection policies allow you to validate your changes by running a pipeline" />
+                </a>
+                <figcaption>Azure Repos branch protection policies allow you to validate your changes by running a pipeline</figcaption>
+            </figure>
+        
+            <p>Before we created our current design system, we were using a framework we had adapted from an early version of Microsoft Fabric. 
+                It looks a bit dated by current standards, but it gives you some idea of what I can do even under those kinds of constraints.</p>
+            <figure>
+                <a href="_assets/images/deployment-group-progress.png">
+                    <img src="_assets/images/deployment-group-progress.png" class="depth-16" alt="Conveying progress while deploying a web application to a group of 74 machines" />
+                </a>
+                <figcaption>Conveying progress while deploying a web application to a group of 74 machines</figcaption>
+            </figure>
+            <p>Thanks for your time and attention! I know that both are precious commodities. If you have any questions, please feel free to <a id="mailToLink" href="#">email me</a>.</p>
+        
+            <h2>About me</h2>
+            <p>I’ve been working on Azure DevOps since it was called Team Foundation Servier 2005. 
+                If you’re interested in my previous professional endeavors, have a look at <a href="https://www.linkedin.com/in/jlamb">my LinkedIn profile</a>. 
+                When I’m not working, I enjoy spending time with my wife and kids, cycling and kayaking for exercise, and building custom PCs.</p>
+
+        </main>
+        <footer>
+            <p>Copyright &copy; 2019, all rights reserved</p>
+        </footer>
+        <script>
+            // self executing function here
+            (function() {
+                document.getElementById("mailToLink").innerHTML = getMailToLink();
+            })();
+        </script>
+    </body>
 </html>
