@@ -7,6 +7,7 @@
         <meta name="description" content="Design portfolio of Jim Lamb, a Senior UX Designer at Microsoft" />
         <link href="_assets/css/core.css" type="text/css" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css?family=Merriweather%7CMontserrat:300,400" rel="stylesheet" />
+    </head>
     <body>
         <header>
             <h1>I&rsquo;m <wbr>Jim&nbsp;Lamb</h1>
@@ -26,7 +27,14 @@
 
             <h2>Recent work</h2>
 
-            <p>I’ve been working on a YAML editor for Azure Pipelines based on the Monaco editor component from Visual Studio Code. 
+            <p>I work as a Senior Designer in a team with a total of six designers and one researcher. 
+                I&rsquo;ve generally been most involved in the projects that require the most technical knowledge due to my extensive software development experience.
+                There&rsquo;s a lot of work to do, however, so I frequently bounce between multiple areas. 
+                I currently own (am the primary designer for) the creation and editing experiences for <a href="https://azure.microsoft.com/en-us/services/devops/pipelines/">Azure Pipelines</a>.
+            </p>
+
+            <h3>Pipeline (YAML) editor</h3>
+            <p>I’ve been working as the primary designer of a YAML editor for Azure Pipelines based on the Monaco editor component from Visual Studio Code.                 
                 The way that the editor is virtualized constrains the options for layouts and scrolling behavior, but I was able to come up with a clean, simple solution.</p>
             <figure>
                 <a href="_assets/images/yaml-editor.png">
@@ -39,6 +47,19 @@
                 <figcaption>Azure Pipelines pipeline (YAML) editor</figcaption>
             </figure>
 
+            <p>When we delivered an earlier version of this experience, it didn&rsquo;t have the <em>assistant</em> panel on the right.
+                Users had to refer to our documentation to understand what snippets were available and how to configure them.
+                The <em>assistant</em> simplifies that dramatically by providing a complete listing of snippets as well as a drill-in
+                experience where the user can configure a snippet before inserting it. Our research tells us that users also want to be able
+                to re-enter this configuration experience after the snippet has been inserted into their YAML in order to make changes.
+                I have a design for that experience and I&rsquo;m working with our engineers to assess its technical feasibility.</p>
+
+            <p>The integration of the <em>assistant</em> panel on the right was tricky. 
+                It needed to accommodate pivots within while maintaining balance with the editor&rsquo;s content.
+                There&rsquo;s a button in the upper-right corner to toggle its visibility and it scrolls independtly from the editor.
+                We&rsquo;re still building out the assistant element, but we&rsquo;ve gotten very positive feedback on this design so far.</p>
+
+            <h3>Pipeline runs</h3>
             <p>Another view that posed some interesting challenges was a listing of pipeline runs. 
                 There’s a lot of information to convey in this view, particularly for large-scale cases. 
                 We ended up going in a somewhat different direction with this design, but this is an exploration I did during the process.</p>
@@ -52,8 +73,12 @@
                 </a>
                 <figcaption>Azure Pipelines view of runs for a selected multi-stage pipeline</figcaption>
             </figure>
+            <p>The particular problem I was trying to solve with this design was to put visual emphasis on the most recently completed stage of the pipeline.
+                Stages that the run has successfully passed through earlier in its lifecycle are less interesting than its current or terminal stage.
+                I also integrated pills into the first column to call attention to the latest run for a particular branch.</p>
 
-            <p>To support the keynote presentation for Microsoft Build 2019, I iterated on my earlier design for creating a new pipeline. 
+            <h3>Deploy to Kubernetes</h3>
+            <p>To support a <a href="https://www.youtube.com/watch?v=8MKtePROi30">presentation at Microsoft Build 2019</a>, I iterated on my earlier design for creating a new pipeline. 
                 Since deploying to a Kubernetes cluster is a fairly complex process, I came up with a simple way to capture some additional configuration information during the process.</p>
             <figure>
                 <a href="_assets/images/deploy-to-kubernetes.png">
@@ -65,7 +90,12 @@
                 </a>
                 <figcaption>New pipline to deploy a container image to a Kubernetes cluster on Azure</figcaption>
             </figure>
+            <p>This feature went from concept to production in just a few short months and, while I was already familiar with Kubernetes, I had to do a deep dive
+                into Azure&rsquo;s Kubernetes Service. I worked closely with the feature team to find the right balance between simplicity and flexibility while 
+                ensuring that we did everything possible to improve the user&rsquo;s probability of success.
+            </p>
 
+            <h3>Branch protection policies</h3>
             <p>Of course, some of the work that comes your way isn’t so glamorous. 
                 In this case, I was asked to design an experience for protecting branches matching a pattern across a (potentially large) set of Git repositories.</p>
             <figure>
@@ -78,9 +108,15 @@
                 </a>
                 <figcaption>Azure Repos branch protection policies allow you to validate your changes by running a pipeline</figcaption>
             </figure>
+            <p>This feature was requested by the Windows team, who use Azure Repos to manage their codebase. 
+                Because of the size of that codebase and the Windows team, we often have to design solutions that scale well beyond our competitors.
+            </p>
         
+            <h3>Deployment group progress</h3>
             <p>Before we created our current design system, we were using a framework we had adapted from an early version of Microsoft Fabric. 
-                It looks a bit dated by current standards, but it gives you some idea of what I can do even under those kinds of constraints.</p>
+                It looks a bit dated by current standards, but it gives you some idea of what I can do even under those kinds of constraints.
+                This design solves the problem of conveying the progress of a complex automated process across a (potentially very large) group of machines.
+            </p>
             <figure>
                 <a href="_assets/images/deployment-group-progress.png">
                     <picture>

@@ -58,11 +58,11 @@ body {
 
 h1, h2, h3, h4, h5 {
 	font-family: 'Montserrat', sans-serif;
+	line-height: 125%;
 }
 
 h1 {
     font-size: 48px;
-	line-height: 125%;
 	letter-spacing: -0.05em;
 	padding-bottom: 16px;
 	word-spacing: 5px;
@@ -70,17 +70,22 @@ h1 {
 
 h2 {
 	font-size: 39px;
-	line-height: 125%;
+	padding: 40px 0 16px 0;
+}
+
+h3 {
+	font-size: 31px;
 	padding: 40px 0 16px 0;
 }
 
 p {
 	font-size: 16px;
 	line-height: 180%;
+	padding-bottom: 1em;
 }
 
 figure {
-	padding: 24px 0 40px 0;
+	padding: 8px 0 40px 0;
 }
 
 figure img, figure picture {
@@ -106,6 +111,8 @@ footer {
 .depth-16 {
 	box-shadow: 0 6.4px 14.4px 0 rgba(0,0,0,.132), 0 1.2px 3.6px 0 rgba(0,0,0,.108);
 }
+
+/* fork me element */
 
 .github-corner:hover .octo-arm {
 	animation:octocat-wave 560ms ease-in-out
