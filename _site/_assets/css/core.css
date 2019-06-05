@@ -48,6 +48,7 @@ table {
 /* elements */
 
 body {
+	background-color: #f8f8f8;
 	color: rgba(0, 0, 0, 0.9);
     font-family: 'Merriweather', sans-serif;
 	font-size: 16px;
