@@ -22,6 +22,7 @@ time, mark, audio, video {
 }
 
 /* HTML5 display-role reset for older browsers */
+
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
@@ -50,7 +51,7 @@ table {
 body {
 	background-color: #f8f8f8;
 	color: rgba(0, 0, 0, 0.9);
-    font-family: 'Merriweather', sans-serif;
+	font-family: 'Roboto Slab', serif;
 	font-size: 16px;
 	padding: 32px 4vw;
 	max-width: 800px;
@@ -58,7 +59,7 @@ body {
 }
 
 h1, h2, h3, h4, h5 {
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Raleway', sans-serif;
 	line-height: 125%;
 }
 
@@ -130,6 +131,7 @@ footer {
 		transform:rotate(10deg)
 	}
 }
+
 @media (max-width:500px) {
 	.github-corner:hover .octo-arm {
 		animation:none
